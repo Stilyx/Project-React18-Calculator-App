@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: 700;
+	font-family: "League Spartan", sans-serif;
+}
+
+.theme-1 {
+	--background-body: #3a4663;
+	--background-container: #242d44;
+	--range-color-background: #242d44;
+	--range-color: #d03f2f;
+	--header-contents: #ffffff;
+	--input-result-background: #181f33;
+	--input-result-value: #ffffff;
+	--numbers-colors: #434a59;
+	--numbers-button-background: #eae3dc;
+	--del-reset-background: #a2b2e1;
+	--result-background: #f96b5b;
+	--result-color: white;
+	--shadow-numbers: inset 0px -4px 0px #b3a497;
+	--shadow-action-reset: inset 0px -4px 0px #414e73;
+	--shadow-result: inset 0px -4px 0px #93261a;
+	transition: 0.4s;
+}
+
+/* Second Theme Configuration */
+
+.theme-2 {
+	--background-container: #d2cdcd;
+	--background-body: #e6e6e6;
+	--range-color-background: #d2cdcd;
+	--range-color: #c85402;
+	--header-contents: #36362c;
+	--input-result-background: #eeeeee;
+	--input-result-value: #36362c;
+	--numbers-colors: #36362c;
+	--numbers-button-background: #e5e4e1;
+	--del-reset-background: #378187;
+	--result-background: #c85402;
+	--result-color: white;
+	--shadow-numbers: inset 0px -4px 0px #a79e91;
+	--shadow-action-reset: inset 0px -4px 0px #1b6066;
+	--shadow-result: inset 0px -4px 0px #873901;
+	transition: 0.4s;
+}
+
+/* Third Theme Configuration */
+
+.theme-3 {
+	--background-container: #1e0936;
+	--background-body: #17062a;
+	--range-color-background: #1e0936;
+	--range-color: #00ded0;
+	--header-contents: #ffe53d;
+	--input-result-background: #1e0936;
+	--input-result-value: #ffe53d;
+	--numbers-colors: #ffe53d;
+	--numbers-button-background: #331c4d;
+	--del-reset-background: #56077c;
+	--result-background: #00ded0;
+	--result-color: #1a2327;
+	--shadow-numbers: inset 0px -4px 0px #881c9e;
+	--shadow-action-reset: inset 0px -4px 0px #be15f4;
+	--shadow-result: inset 0px -4px 0px #6cf9f1;
+	transition: 0.4s;
+}
+
+body {
+	background-color: var(--background-body);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 540px;
+	margin: 0 auto;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 24px;
+}
+
+.calculator-container {
+	display: flex;
+	height: auto;
+	width: 100%;
+	background-color: var(--background-container);
+	display: grid;
+	grid-template-columns: repeat(4, 101px);
+	gap: 24px;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 0;
+	border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 327px;
+	}
+
+	.calculator-container {
+		width: 327px;
+		gap: 13px;
+		grid-template-columns: repeat(4, 60px);
+	}
+}

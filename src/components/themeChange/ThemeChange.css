@@ -1,0 +1,44 @@
+.header .theme-options {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 26px;
+}
+.header .theme-options p {
+	color: var(--header-contents);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.header .theme-options .theme-radio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 71px;
+	gap: 5px;
+}
+.header .theme-options .theme-radio .radio-values {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.header .theme-options .theme-radio input[type='range'] {
+	appearance: none;
+	width: 71px;
+	background: var(--range-color-background);
+	border-radius: 13px;
+	padding: 5px;
+	height: 26px;
+}
+
+.header .theme-options .theme-radio input[type='range']::-webkit-slider-thumb {
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--range-color);
+	cursor: pointer;
+}

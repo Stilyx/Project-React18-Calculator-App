@@ -1,0 +1,45 @@
+button {
+	height: 55px;
+	border-radius: 10px;
+	border: none;
+	font-size: 40px;
+	background-color: var(--numbers-button-background);
+	color: var(--numbers-colors);
+	box-shadow: var(--shadow-numbers);
+	text-align: center;
+	cursor: pointer;
+}
+
+button:active {
+	transform: translateY(4px);
+}
+
+.delete-button {
+	font-size: 28px;
+	color: white;
+	background-color: var(--del-reset-background);
+	box-shadow: var(--shadow-action-reset);
+}
+
+.reset {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.equal-button {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	background-color: var(--result-background);
+	box-shadow: var(--shadow-result);
+	color: var(--result-color);
+}
+
+@media (max-width: 600px) {
+	body {
+		-webkit-tap-highlight-color: transparent;
+	}
+	button {
+		height: 64px;
+		font-size: 32px;
+	}
+}
